@@ -17,8 +17,8 @@ function Element() {
   };
     return (
         <div>
-       <div className="d-flex">
-        <div className="product-container col-md-9 shadow">
+       <div className="element-container">
+        <div className="product-container">
           {product.map((singleCourse) => (
             <Product
               courseDetails={singleCourse}

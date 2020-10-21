@@ -1,0 +1,31 @@
+.cart{
+    border: 1px solid grey;
+    width: 300px;
+    height: 250px;
+    text-align: center;
+    box-shadow: 5px 5px 10px #8383db;
+    background-color: #b0dee6;
+    margin-top: 20px;
+    margin-left: 50px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    position: fixed;
+}
+.h1{
+    text-decoration-color: white;
+}
+.button{
+    background-color: rgb(238, 93, 117); 
+    width: 200px;
+   height: 30px;
+   border: 2px solid darkgoldenrod;
+  -radius: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.button:hover{
+    background-color: powderblue;
+}
+
+ 
+    

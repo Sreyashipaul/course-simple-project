@@ -1,6 +1,5 @@
 import React from 'react';
-
-
+import './Cart.css';
 
 
 const Cart = (props) => {
@@ -15,23 +14,23 @@ const Cart = (props) => {
     let precision = num.toFixed(2);
     return Number(precision);
   }
+  
+  
     return (
-        <div className="shadow text-left">
-      <h1 className="bg-primary text-white text-center">
-
+        <div className="cart">
+      <h1>
+       Order Summery
       </h1>
-      <h3>Course enrolled: {cart.length}</h3>
+      <h3>Course Ordered: {cart.length}</h3>
+    
       <h3>Price: ${numFormat(total)}</h3>
+      
       <h5>
-        Coupon Applied (10%):{" "}
-        <span className="text-success"> -${numFormat(coupon)}</span>
+        Tax (10%): <span className="text-danger"> ${numFormat(tax)}</span>
       </h5>
-      <h5>
-        Tax (5%): <span className="text-danger"> ${numFormat(tax)}</span>
-      </h5>
-
-      <button type="button" className="btn btn-primary btn-block">
-        Checkout{" "}
+      <br/>
+      <button type="button" className="button">
+        Buy now {" "}
         <span className="badge badge-light">$ {numFormat(grandTotal)}</span>
       </button>
     </div>
